@@ -21,3 +21,8 @@ h3 {
 p {
   font-size: 18px;
 }
+.attribution {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}

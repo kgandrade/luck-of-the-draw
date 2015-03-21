@@ -7,6 +7,7 @@
 
 {# Content #}
 {% block content %}
+<!-- Main gallery -->
 <div class="gallery">
   {% for slide in slides %}
   <div class="gallery-cell{% if extra_class %} {{ extra_class }}{% endif %}"{% if slide.background_image %} style="background-image: url('{{ slide.background_image }}');"{% endif %}>
@@ -16,6 +17,7 @@
         {{ slide.text|safe }}
       </div>
     </div>
+    <div class="attribution"> Photo by {{slide.photo_attribution}}</div>
   </div>
   {% endfor %}
 </div>
