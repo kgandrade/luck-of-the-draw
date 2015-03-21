@@ -1,5 +1,23 @@
 body {
-  background-color: #222;
-  color: #fff;
+  color: #fefefe;
+  background-color: #111;
 }
-
+.gallery-cell {
+  text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+h1 {
+  font-size: 70px;
+}
+h2 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 30px;
+}
+p {
+  font-size: 18px;
+}
