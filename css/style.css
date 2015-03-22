@@ -28,3 +28,21 @@ p {
 	bottom: 20px;
 	right: 20px;
 }
+.gallery-cell.top .content-wrapper {
+	vertical-align: top;
+	padding-top: 40px;
+}
+.gallery-cell.bottom .content-wrapper {
+	vertical-align: bottom;
+	padding-bottom: 40px;
+}
+
+.gallery-cell.bg-top{
+	background-position: top center;
+}
+
+#asylums-granted-chart {
+	margin: 0 auto;
+	width: 100%;
+	height: 400px;
+}
