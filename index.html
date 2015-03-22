@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-    <div class="attribution"> Photo by {{slide.photo_attribution}}</div>
+    {% if slide.photo_attribution %}<div class="attribution"> Photo by {{slide.photo_attribution}}</div> {% endif %}
   </div>
   {% endfor %}
 </div>

@@ -31,7 +31,7 @@ function createAsylumsGrantedChart() {
 
   var data_table = new google.visualization.arrayToDataTable(data);
   var options = {
-  	title: 'Asylums granted (TK TK)',
+  	title: 'Asylums granted by nationality (Fiscal Year 2014)',
   	legend: { position: 'none' }
   }
   var chart = new google.visualization.ColumnChart(document.getElementById('asylums-granted-chart'));
