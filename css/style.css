@@ -45,4 +45,5 @@ p {
 	margin: 0 auto;
 	width: 100%;
 	height: 400px;
-}
+} 
+.align-left h3 {text-align: left}
