@@ -40,6 +40,11 @@ p {
 .gallery-cell.bg-top{
 	background-position: top center;
 }
+.gallery-cell.contain {
+	background-color: #000;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
 
 #asylums-granted-chart {
 	margin: 0 auto;
