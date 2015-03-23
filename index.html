@@ -10,7 +10,7 @@
 <!-- Main gallery -->
 <div class="gallery">
   {% for slide in slides %}
-  <div class="gallery-cell{% if slide.extra_class %} {{ slide.extra_class }}{% endif %}"{% if slide.background_image %} style="background-image: url('{{ slide.background_image }}');"{% endif %}>
+  <div class="gallery-cell{% if slide.extra_class %} {{ slide.extra_class }}{% endif %}"{% if slide.background_image %} {% if slide.lazy_load %}data-bg-image="{{ slide.background_image }}"{% else %}style="background-image: url('{{ slide.background_image }}');"{% endif %}{% endif %}>
     <div class="content-outer-wrapper">
       <div class="content-wrapper">
         <div class="content">
