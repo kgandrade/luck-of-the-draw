@@ -3,6 +3,7 @@ var $gallery = null;
 
 // Global objects
 var asylumsGrantedChart = null;
+var flkty = null;
 
 // Google magic
 google.load('visualization', '1.0', {'packages':['corechart']});
@@ -18,6 +19,21 @@ var onDocumentReady = function() {
     "accessibility": true,
     "setGallerySize": false,
   }).focus();
+
+  flkty = $gallery.data('flickity');
+
+  $gallery.on('settle', onGallerySettle);
+}
+
+function onGallerySettle() {
+  var $el = $gallery.find('.gallery-cell').eq(flkty.selectedIndex);
+  var bgImg = $el.data('bg-image');
+  if (bgImg) {
+    var newUrl = bgImg + '?' + Date.now();
+    $el.css({
+      'background-image': 'url("' + newUrl + '")'
+    });
+  }
 }
 
 // create the asylums granted chart
